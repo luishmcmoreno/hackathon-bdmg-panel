@@ -89,34 +89,27 @@
         <p><b>Data final prevista:</b> 25/11/2017</p>
       </div>
 
-      <div class="col-md-4 col-xs-12">
-        <h5>Informações do Cliente</h5>
-        <div class="pdf">
-          <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-xs-12">
+      <div class="col-md-2 col-xs-12">
         <h5>Informações do Projeto</h5>
         <div class="pdf">
           <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
         </div>
       </div>
+
+      <div class="col-md-6 col-xs-12 gallery">
+          <img (click)="openModalPicture('assets/imgs/foto' + i + '.jpg')" [src]="'assets/imgs/foto' + i + '.jpg'" [alt]="'Imagem' + i" *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+        </div>
     </div>
 
     <div class="row">
-      <div class="col-md-8 col-xs-12 gallery">
-        <img (click)="openModalPicture('assets/imgs/foto' + i + '.jpg')" [src]="'assets/imgs/foto' + i + '.jpg'" [alt]="'Imagem' + i" *ngFor="let i of [1, 2, 3, 4, 5, 6, 7]">
-      </div>
-
-      <div class="buttons clearfix col-md-4 col-xs-12">
-        <div class="col-md-12">
+      <div class="buttons clearfix col-xs-12">
+        <div class="col-md-6">
           <button class="btn btn-primary btn-block">
             <span class="fa fa-thumbs-up"></span>
             Aprovar
           </button>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-6">
           <button class="btn btn-danger btn-block">
             <span class="fa fa-thumbs-down"></span>
             Reprovar

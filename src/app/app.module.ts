@@ -51,6 +51,7 @@ import { ProjectsApproveComponent } from './pages/projects-approve/projects-appr
 import { ProjectsToApproveComponent } from './pages/projects-to-approve/projects-to-approve.component';
 import { ProjectToApproveDetailComponent } from './pages/project-to-approve-detail/project-to-approve-detail.component';
 import { ImgModalComponent } from './components/img-modal/img-modal.component';
+import { ProjectApprovedDetailComponent } from './pages/project-approved-detail/project-approved-detail.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { ImgModalComponent } from './components/img-modal/img-modal.component';
     ProjectsApproveComponent,
     ProjectsToApproveComponent,
     ProjectToApproveDetailComponent,
-    ImgModalComponent
+    ImgModalComponent,
+    ProjectApprovedDetailComponent
   ],
   imports: [
     BrowserModule,

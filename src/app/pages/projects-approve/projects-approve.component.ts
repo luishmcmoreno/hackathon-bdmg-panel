@@ -24,7 +24,14 @@ export class ProjectsApproveComponent implements OnInit {
       {clientName: 'Empresa 03', dtBegin: '13/11/2017', dtEnd: '13/11/2022', totalValue: 'R$ 35.000,00', invalidPaidStatus: 'Não', id: 3},
       {clientName: 'Empresa 04', dtBegin: '13/11/2017', dtEnd: '13/11/2022', totalValue: 'R$ 35.000,00', invalidPaidStatus: 'Sim', id: 4},
     ],
-    actions: null
+    actions: [
+      {
+        name: 'Detalhe', class: 'btn btn-primary', icon: 'fa fa-info',
+        handler: row => {
+          this.router.navigate([`/projects-approve/${row.id}`]);
+        }
+      }
+    ]
   };
 
   constructor(private router: Router) { }

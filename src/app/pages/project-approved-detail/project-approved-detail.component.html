@@ -1,0 +1,62 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    <span>Projeto Aprovado</span>
+    <small> - Detalhe do projeto / financiamento</small>
+  </h1>
+</section>
+
+<section class="content">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="divider"></div>
+      <h4>Cliente</h4>
+      <div class="divider"></div>
+    </div>
+
+    <div class="col-md-4 col-xs-12">
+      <p>
+        <b>Razão Social:</b> Cliente 01</p>
+      <p>
+        <b>CNPJ: </b> 94.760.423/0001-53</p>
+      <p>
+        <b>Faturamento médio anual: </b> R$ 300.000,00</p>
+    </div>
+
+    <div class="col-md-4 col-xs-12">
+      <p>
+        <b>Cidade: </b> Belo Horizonte - MG</p>
+      <p>
+        <b>Rua: </b> Rua Silva Ortiz, 754 - Floresta</p>
+    </div>
+
+    <div class="col-md-4 col-xs-12">
+      <!-- small box -->
+      <div class="small-box bg-green">
+        <div class="inner">
+          <h3>R$ 25.000,00</h3>
+          <p>Valor do empréstimo</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-usd"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-success">
+        <div class="box-header with-border">
+          <h3 class="box-title">Histórico de Parcelas</h3>
+        </div>
+        <div class="box-body no-padding">
+          <ng-table [data]="data"></ng-table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
