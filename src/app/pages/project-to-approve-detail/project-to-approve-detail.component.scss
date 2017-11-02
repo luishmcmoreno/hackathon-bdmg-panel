@@ -3,3 +3,14 @@
     margin-top: 5px;
   }
 }
+
+.pdf {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  i {
+    color: red;
+    font-size: 60px;
+    margin-left: 35px;
+  }
+}
