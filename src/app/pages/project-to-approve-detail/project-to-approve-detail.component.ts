@@ -1,3 +1,5 @@
+import { ImgModalComponent } from '../../components/img-modal/img-modal.component';
+import { DialogService } from 'ng2-bootstrap-modal';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectToApproveDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialogService: DialogService) { }
+
+  openModalPicture(photoUrl: string) {
+    console.log('called');
+    this.dialogService.addDialog(ImgModalComponent, {photoUrl});
+  }
 
   ngOnInit() {
   }

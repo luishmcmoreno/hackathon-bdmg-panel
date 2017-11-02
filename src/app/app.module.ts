@@ -19,16 +19,13 @@ import { QuillModule } from 'ngx-quill';
 import { Ng2TableModule } from '@pluritech/ng2-responsive-table';
 import { DialogServiceModule } from '@pluritech/dialog-service';
 
-// Component
-import { AppComponent } from './app.component';
-import { LoaderComponent } from './components/loader/loader.component';
-import { ContentLoaderComponent } from './components/content-loader/content-loader.component';
+// Configurations Files
+import { configuration } from './configuration';
 
 // Parts
 import { DashComponent } from './parts/dash/dash.component';
 
 //  Pages
-import { MainComponent } from './pages/main/main.component';
 import { LoginComponent } from './pages/login/login.component';
 
 // Router config
@@ -45,12 +42,15 @@ import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password
 // Pipes
 import { DatePipe } from '@angular/common';
 
-// Configurations Files
-import { configuration } from './configuration';
+// Component
+import { AppComponent } from './app.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { ContentLoaderComponent } from './components/content-loader/content-loader.component';
 import { BalanceComponent } from './pages/balance/balance.component';
 import { ProjectsApproveComponent } from './pages/projects-approve/projects-approve.component';
 import { ProjectsToApproveComponent } from './pages/projects-to-approve/projects-to-approve.component';
 import { ProjectToApproveDetailComponent } from './pages/project-to-approve-detail/project-to-approve-detail.component';
+import { ImgModalComponent } from './components/img-modal/img-modal.component';
 
 
 @NgModule({
@@ -60,12 +60,12 @@ import { ProjectToApproveDetailComponent } from './pages/project-to-approve-deta
     DashComponent,
     ForgotPasswordComponent,
     LoaderComponent,
-    MainComponent,
     ContentLoaderComponent,
     BalanceComponent,
     ProjectsApproveComponent,
     ProjectsToApproveComponent,
-    ProjectToApproveDetailComponent
+    ProjectToApproveDetailComponent,
+    ImgModalComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +87,9 @@ import { ProjectToApproveDetailComponent } from './pages/project-to-approve-deta
     Ng2TableModule,
     DialogServiceModule.forRoot()
   ],
-  entryComponents: [],
+  entryComponents: [
+    ImgModalComponent
+  ],
   providers: [
     LoginService,
     AuthenticatedGuard,

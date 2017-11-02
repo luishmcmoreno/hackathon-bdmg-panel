@@ -14,7 +14,7 @@ export class ProjectsToApproveComponent implements OnInit {
       {id: 'integratorName', name: 'Integrador'},
       {id: 'countSuccess', name: 'Projetos de sucesso'},
       {id: 'countFail', name: 'Projetos que falharam'},
-      {id: 'confiability', name: 'Confiabilidade'},
+      {id: 'confiability', name: 'Risco de epréstimo'},
       {id: 'requestedValue', name: 'Valor requisitado'},
     ],
     // tslint:disable:max-line-length
