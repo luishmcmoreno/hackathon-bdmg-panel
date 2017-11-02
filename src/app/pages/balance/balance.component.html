@@ -1,0 +1,45 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    <span>Balanço</span>
+    <small> - Balanço financeiro</small>
+  </h1>
+</section>
+
+<section class="content">
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="box box-success">
+        <div class="box-header with-border">
+          <h3 class="box-title">Balanço Financeiro</h3>
+        </div>
+        <div class="box-body">
+          <div class="chart">
+            <canvas baseChart style="height:250px" [data]="moneyPieChartData" [labels]="moneyChartLabels" [chartType]="pieType">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="box box-success">
+        <div class="box-header with-border">
+          <h3 class="box-title">Projetos</h3>
+        </div>
+        <div class="box-body">
+          <div class="chart">
+            <canvas baseChart style="height:250px" [data]="projectPieChartData" [labels]="projectsLabel" [chartType]="pieType">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <app-content-loader loadingMessage="You have a lot to do..."></app-content-loader> -->
+
+</section>
