@@ -17,7 +17,6 @@ import { ToasterModule } from 'angular2-toaster';
 import { PaginationModule } from '@pluritech/pagination';
 import { QuillModule } from 'ngx-quill';
 import { Ng2TableModule } from '@pluritech/ng2-responsive-table';
-import { DialogServiceModule } from '@pluritech/dialog-service';
 
 // Configurations Files
 import { configuration } from './configuration';
@@ -90,8 +89,7 @@ import { IntegratorDetailComponent } from './pages/integrator-detail/integrator-
     FileUploadModule,
     ToasterModule,
     QuillModule,
-    Ng2TableModule,
-    DialogServiceModule.forRoot()
+    Ng2TableModule
   ],
   entryComponents: [
     ImgModalComponent
