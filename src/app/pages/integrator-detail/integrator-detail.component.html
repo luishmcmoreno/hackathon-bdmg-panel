@@ -1,0 +1,79 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    <span>Integrador</span>
+    <small></small>
+  </h1>
+</section>
+
+<section class="content">
+  <div class="divider"></div>
+  <h4>Dados do Integrador</h4>
+  <div class="divider"></div>
+  <div class="row">
+    <div class="col-md-4 col-xs-12">
+      <h5>Informações</h5>
+      <p><b>Razão Social:</b> Vivuz Solar Energia</p>
+      <p><b>CNPJ: </b> 94.760.423/0001-53</p>
+    </div>
+
+    <div class="col-md-2 col-xs-12 logo">
+      <img src="assets/imgs/logo.jpg" alt="" class="img-responsive">
+    </div>
+
+    <div class="col-md-3 col-xs-12">
+      <!-- small box -->
+      <div class="small-box bg-green">
+        <div class="inner">
+          <h3>44</h3>
+
+          <p>Projetos de Sucesso</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-smile-o"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-xs-12">
+        <!-- small box -->
+        <div class="small-box bg-red">
+          <div class="inner">
+            <h3>3</h3>
+
+            <p>Projetos Fracassados</p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-frown-o"></i>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="row">
+    <div class="col-md-4 col-xs-12">
+      <h5>Endereço</h5>
+      <p><b>Cidade:</b> Belo Horizonte - MG</p>
+      <p><b>Rua: </b> Av. dom Pedro I, 1785 - Jd. Belmar, Pampulha</p>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="buttons clearfix col-xs-12">
+        <div class="col-md-6">
+          <button class="btn btn-primary btn-block" [routerLink]="['/integrators']">
+            <span class="fa fa-thumbs-up"></span>
+            Aprovar
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-danger btn-block" [routerLink]="['/integrators']">
+            <span class="fa fa-thumbs-down"></span>
+            Reprovar
+          </button>
+        </div>
+      </div>
+    </div>
+
+</section>

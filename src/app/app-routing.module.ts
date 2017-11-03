@@ -10,6 +10,8 @@ import { ProjectsToApproveComponent } from './pages/projects-to-approve/projects
 import { BalanceComponent } from './pages/balance/balance.component';
 import { ProjectApprovedDetailComponent } from './pages/project-approved-detail/project-approved-detail.component';
 import { ProjectToApproveDetailComponent } from './pages/project-to-approve-detail/project-to-approve-detail.component';
+import { IntegratorComponent } from './pages/integrator/integrator.component';
+import { IntegratorDetailComponent } from './pages/integrator-detail/integrator-detail.component';
 
 // Guards
 import { UnauthenticatedGuard } from './guards/unauthenticated/unauthenticated.guard';
@@ -42,6 +44,8 @@ const routes: Routes = [
       { component: ProjectToApproveDetailComponent, path: 'projects-to-approve/:id' },
       { component: ProjectsApproveComponent, path: 'projects-approve' },
       { component: ProjectApprovedDetailComponent, path: 'projects-approve/:id' },
+      { component: IntegratorComponent, path: 'integrators' },
+      { component: IntegratorDetailComponent, path: 'integrator/:id' },
     ]
   }
 ];
