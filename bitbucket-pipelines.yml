@@ -1,15 +1,12 @@
-# This is a sample build configuration for JavaScript.
-# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
-# Only use spaces to indent your .yml configuration.
-# -----
-# You can specify a custom docker image from Docker Hub as your build environment.
-image: node:6.9.4
-
+image: luishmcmoreno/angular-cli-docker:master
 pipelines:
   default:
-    - step:
-        caches:
-          - node
-        script: # Modify the commands below to build your repository.
-          - npm install
-          - npm test
+      - step:
+          script:
+            - npm install -g rxjs
+            - npm install --quiet
+            - ng build --prod --aot
+            - apt-get update
+            - apt-get -qq install sshpass -y --force-yes
+            - cd dist
+            - sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r * $FTP_USERNAME@198.199.65.29:/home/pluritest/painel.hackathonbdmg.pluritest.com.br
